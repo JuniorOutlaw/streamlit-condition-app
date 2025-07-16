@@ -6,6 +6,13 @@ import os
 st.set_page_config(page_title="Condition Viewer", layout="centered")
 st.title("Predictive Maintenance Dashboard")
 
+# --- Sensor Selection ---
+sensor_options = ["MX201"]
+selected_sensor = st.selectbox("🧭 Select Sensor", options=sensor_options, index=0)
+
+# Optional: display confirmation
+st.markdown(f"**📡 Viewing data for sensor:** `{selected_sensor}`")
+
 # --- Load Fixed Excel File ---
 try:
     df = pd.read_excel("forecast_status_output.xlsx")
