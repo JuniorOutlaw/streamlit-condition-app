@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import os
 
-# --- Set working directory ---
-os.chdir("/Users/sushant/Desktop/ITC/JIPITE")
-
 # --- Page Setup ---
 st.set_page_config(page_title="Condition Viewer", layout="centered")
 st.title("Predictive Maintenance Dashboard")
